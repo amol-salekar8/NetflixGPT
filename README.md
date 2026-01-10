@@ -2,6 +2,9 @@
 
 - Create React app
 - Configure tailwind css https://v3.tailwindcss.com/docs/guides/create-react-app
+- Header
+- Login Form 
+- Sign up form
 
 # Features
 - Login / Sign up page ()
