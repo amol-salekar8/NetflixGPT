@@ -3,8 +3,16 @@
 - Create React app
 - Configure tailwind css https://v3.tailwindcss.com/docs/guides/create-react-app
 - Header
-- Login Form 
-- Sign up form
+- Login Form  
+- Sign up form ( We can use form lib https://formik.org/docs/overview#installation )
+- Form validation
+- useRef
+- Firebase setup
+- Deploying our app to the production
+- Create sign up in firebase
+- Implement Sign in user API
+- Created Redux store with user slice
+
 
 # Features
 - Login / Sign up page ()
