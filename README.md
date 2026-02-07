@@ -32,8 +32,8 @@
     - Movie suggestion
 
 # Firebase 
-** [Documentation](https://firebase.google.com/docs/auth/web/manage-users) **
-** To fullfil the requirements for my backend **
+**[Documentation](https://firebase.google.com/docs/auth/web/manage-users)**
+**To fullfil the requirements for my backend code** 
 
 - Hosting
 - Authentication
