@@ -7,7 +7,6 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/Firebase";
-import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
@@ -17,7 +16,7 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
   const fullName = useRef(null);
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const toggelSignInForm = () => {
     setIsSignIn(!isSignIn);
@@ -36,15 +35,23 @@ const Login = () => {
       ).then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          updateProfile(auth.currentUser, {
+          updateProfile(user, {
             displayName: fullName.current.value,
-            photoURL: "https://example.com/jane-q-user/profile.jpg",
+            photoURL: "https://i.pinimg.com/736x/91/86/1b/91861b749841221d52122f0c2933d8a6.jpg",
           }).then(() => {
               // Profile updated!
-              navigate('/browse');
+              // get the updated details from firebase 
+              const { uid, email, displayName, photoURL } = auth.currentUser;
+                      dispatch(
+                        addUser({
+                          uid: uid,
+                          email: email,
+                          displayName: displayName,
+                          photoURL: photoURL,
+                        })
+                      );
             }).catch((error) => {
-              // An error occurred
-              // ...
+              setErrorMessage(errorMessage);
             });
         })
         .catch((error) => {
@@ -62,13 +69,10 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          navigate("/browse");
-          // ...
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          navigate("/");
           setErrorMessage(errorCode + " :: " + errorMessage);
         });
     }
