@@ -1,5 +1,7 @@
 # Netflix GPT
 
+[REDME.md documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
 ## What we have done
 - Create React app
 - Configure tailwind css https://v3.tailwindcss.com/docs/guides/create-react-app
@@ -37,11 +39,7 @@
 
 - Hosting
 - Authentication
-
-
-
     
-
 ## Commands Related to FireBase
 ```
     npm install -g firebase-tools
