@@ -58,5 +58,18 @@
 - Unsubscribe the onAuthStateChanged() after the component get unmount in use effect 
 
 
+# Browse Page ( API TMDB )
+- To show movies in browse page we used Third party API that is 
+-[The Movie Database](https://www.themoviedb.org/settings/account)
+ [Documentation](themoviedb.org/login?to=read_me&redirect_uri=/docs)
+
+**Step**<!-- U-HarveySpector, P-Harvey2408 -->
+1) Login the Official site ()
+2) Click on logo -> go to settings -> Click on API
+3) Create your account to generate API key and Acess token
+
+
+
+
 
 
