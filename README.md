@@ -30,3 +30,24 @@
     - Search bar
     - Movie suggestion
 
+
+## Commands Related to FireBase
+```
+    npm install -g firebase-tools
+    firebase login
+    firebase init then select hosting
+    firebase deploy
+```
+# Adding constant file 
+
+# Bug 
+- Unable to move further without login but we go with the path variable
+=> To resolve that we change our location of onAuthStateChanged() from body to Header
+
+
+# Improvement
+- Unsubscribe the onAuthStateChanged() after the component get unmount in use effect 
+
+
+
+

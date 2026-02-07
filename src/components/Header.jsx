@@ -4,6 +4,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/Firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
+import { LOGO_IMAGE } from "../utils/Constant";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ const Header = () => {
       {/* <NetflixLogo netflixLogo = {netflixLogo} width={100} height={100}/> */}
       <img
         className="w-44"
-        src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2025-12-03/consent/87b6a5c0-0104-4e96-a291-092c11350111/019ae4b5-d8fb-7693-90ba-7a61d24a8837/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+        src={LOGO_IMAGE}
       />
       {user && (<div className="flex p-2">
         <img

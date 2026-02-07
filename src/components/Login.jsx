@@ -9,6 +9,7 @@ import {
 import { auth } from "../utils/Firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { LOGIN_BACKGROUND_IMAGE } from "../utils/Constant";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -83,7 +84,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/e393bb3f-261f-43d1-99bb-16a157885615/web/IN-en-20260105-TRIFECTA-perspective_2802b120-4b8c-44a5-8fb9-617a728f4ec6_large.jpg"
+          src={LOGIN_BACKGROUND_IMAGE}
           alt="backgroundImg"
         />
       </div>
