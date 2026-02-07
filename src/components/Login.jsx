@@ -9,7 +9,7 @@ import {
 import { auth } from "../utils/Firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { LOGIN_BACKGROUND_IMAGE } from "../utils/Constant";
+import { LOGIN_BACKGROUND_IMAGE, USER_AVTAR } from "../utils/Constant";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -38,7 +38,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: fullName.current.value,
-            photoURL: "https://i.pinimg.com/736x/91/86/1b/91861b749841221d52122f0c2933d8a6.jpg",
+            photoURL: USER_AVTAR,
           }).then(() => {
               // Profile updated!
               // get the updated details from firebase 

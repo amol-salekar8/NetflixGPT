@@ -1,5 +1,6 @@
 # Netflix GPT
 
+## What we have done
 - Create React app
 - Configure tailwind css https://v3.tailwindcss.com/docs/guides/create-react-app
 - Header
@@ -14,7 +15,7 @@
 - Created Redux store with user slice
 
 
-# Features
+## What we have to do
 - Login / Sign up page ()
     - Sign in / sign up page
     - redirect page
@@ -30,6 +31,16 @@
     - Search bar
     - Movie suggestion
 
+# Firebase 
+** [Documentation](https://firebase.google.com/docs/auth/web/manage-users) **
+** To fullfil the requirements for my backend **
+
+- Hosting
+- Authentication
+
+
+
+    
 
 ## Commands Related to FireBase
 ```
@@ -38,14 +49,14 @@
     firebase init then select hosting
     firebase deploy
 ```
-# Adding constant file 
+### Adding constant file 
 
-# Bug 
+### Bug 
 - Unable to move further without login but we go with the path variable
 => To resolve that we change our location of onAuthStateChanged() from body to Header
 
 
-# Improvement
+### Improvement
 - Unsubscribe the onAuthStateChanged() after the component get unmount in use effect 
 
 
