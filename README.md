@@ -56,7 +56,11 @@
 
 ### Improvement
 - Unsubscribe the onAuthStateChanged() after the component get unmount in use effect 
-- [Double call](/src/image/doubleCallAPI.png)
+- [Q. Why some time API get called double Time](/src/image/doubleCallAPI.png)
+  => Becuase of react strict mode 
+  ``` <React.StrictMode>
+    <App />
+  </React.StrictMode>```
 
 
 # Browse Page ( API TMDB )
