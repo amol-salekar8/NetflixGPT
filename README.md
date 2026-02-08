@@ -56,6 +56,7 @@
 
 ### Improvement
 - Unsubscribe the onAuthStateChanged() after the component get unmount in use effect 
+- [Double call](/netflix_gpt/src/image/doubleCallAPI.png)
 
 
 # Browse Page ( API TMDB )
