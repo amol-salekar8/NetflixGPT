@@ -64,9 +64,19 @@
   </React.StrictMode>
   ```
 
+# Redux
+1) for store mangement we have appStore.js
+**Used hooks to perform store management **
+1) useDispatch()
+2) useSelector()
+3) useSlice()
+
 
 # Browse Page ( API TMDB )
 - To show movies in browse page we used Third party API that is
+- We are creating two container
+    - Main Container
+    - Secondary Container
 
 **Step**<!-- U-HarveySpector, P-Harvey2408 -->
 1) Login the Official site [The Movie Database](https://www.themoviedb.org/settings/account)
@@ -75,6 +85,8 @@
 4) [Documentation](themoviedb.org/login?to=read_me&redirect_uri=/docs)
 
 
+# Custom Hooks
+1) Removed browse page logic rendering logic to useNowPlayingMovies() hook
 
 
 
