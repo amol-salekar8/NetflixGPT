@@ -14,7 +14,11 @@
 - Deploying our app to the production
 - Create sign up in firebase
 - Implement Sign in user API
-- Created Redux store with user slice
+- Created Redux store with user slice and movie slice
+- Fetch data for Trailer Video
+- Update the movie store data with fetch data from triler video
+- We used tailwind classes to add CSS in our code.
+
 
 
 ## What we have to do
@@ -83,6 +87,11 @@
 2) Click on logo -> go to settings -> Click on API
 3) Create your account to generate API key and Acess token
 4) [Documentation](themoviedb.org/login?to=read_me&redirect_uri=/docs)
+
+**How we add background video** we add code in below component
+```react
+<VideoBackground/>
+ ```
 
 
 # Custom Hooks
