@@ -80,7 +80,12 @@
 - To show movies in browse page we used Third party API that is
 - We are creating two container
     - Main Container
+        - Video title
+        - Video background
     - Secondary Container
+        - Movie list : now playing
+        - Movie List : trending movie
+        - Movie List : featuring movie
 
 **Step**<!-- U-HarveySpector, P-Harvey2408 -->
 1) Login the Official site [The Movie Database](https://www.themoviedb.org/settings/account)
@@ -90,12 +95,13 @@
 
 **How we add background video** we add code in below component
 ```react
-<VideoBackground/>
+    <VideoBackground/>
  ```
-
 
 # Custom Hooks
 1) Removed browse page logic rendering logic to useNowPlayingMovies() hook
+
+
 
 
 

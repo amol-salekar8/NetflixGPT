@@ -14,9 +14,6 @@ const VideoBackground = ({ movie_id }) => {
               <iframe
               className="w-screen aspect-video"
               src={URL}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
               title="Embedded youtube"
             />
             </div>
