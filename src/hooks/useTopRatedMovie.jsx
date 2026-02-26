@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { TMDP_MOVIE_OPTION } from "../utils/Constant";
-import {  addTopRatedMovie } from "../reduxStore/movieSlice";
+import {     addTopRatedMovie } from "../reduxStore/movieSlice";
 
 const useTopRatedMovie = () =>{
     const dispatch = useDispatch();
