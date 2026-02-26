@@ -103,7 +103,7 @@
 
 # Hide Scrollbar
 1) using tailwind.config.js
-```react
+```React.js
 plugins: [ 
     function({addUtilities}){
       const newUtilities = {
