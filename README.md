@@ -101,6 +101,36 @@
 # Custom Hooks
 1) Removed browse page logic rendering logic to useNowPlayingMovies() hook
 
+# Hide Scrollbar
+1) using tailwind.config.js
+```react
+plugins: [ 
+    function({addUtilities}){
+      const newUtilities = {
+          ".no-scrollbar::webkit-scrollbar":{
+            display:"none",
+          },
+          ".no-scrollbar":{
+            "-ms-overflow-style":"none",
+            "scrollbar-width":"none",
+          },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
+```
+2) Using custom Css
+```CSS
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+```
+
 
 
 
